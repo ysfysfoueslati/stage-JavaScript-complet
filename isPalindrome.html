@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function isPalindrome(ch){
+            const ch2=ch.split('').reverse().join('');
+            return (ch.toUpperCase()=== ch2.toUpperCase());
+        }
+
+        const words=["kayak","SOS","KayAk","bonjour"];
+        
+        for (let word of words){
+            if (isPalindrome(word)){
+                console.log(`${word} is palindrome`);
+            }
+            else{
+                console.log(`${word} is not palindrome`);
+            }
+        }
+        
+    </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
